@@ -32,7 +32,18 @@ $ source venv/bin/activate
 >>> db.create_all()
 ```
 
-4. Run Flask
+4. Create Flask env file
+
+```bash
+(venv) $ vim .flaskenv
+
+Add This Lines
+
+FLASK_ENV=development
+FLASK_APP=pwd_manager
+```
+
+5. Run Flask
 
 ```python
 (venv) $ flask run
